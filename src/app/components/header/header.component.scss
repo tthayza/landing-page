@@ -1,0 +1,28 @@
+@import '../../../styles.scss';
+
+header {
+  width: 100vw;
+  padding: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  font-family: $pf-display-bold;
+  font-size: 3rem;
+  color: $primary-color;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+li {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: $black-color;
+}
