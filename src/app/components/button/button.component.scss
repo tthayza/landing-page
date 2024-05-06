@@ -1,16 +1,18 @@
-@import '../../../styles.scss';
+@import "../../../styles.scss";
 
 button {
   padding: 0.8rem 1.2rem;
   font-weight: bold;
   font-size: 1.2rem;
-&.contained {
-  color: $white-color;
-  background-color: $secondary-color;
-  border: none;
-  filter: drop-shadow(0px 0px 4px #FF5722);;
-}&.borderless {
-  color: $secondary-color;
-  background: transparent;
-  border: none;
-}}
+  &.contained {
+    color: $white-color;
+    background-color: $secondary-color;
+    border: none;
+    filter: drop-shadow(0px 0px 4px #ff5722);
+  }
+  &.borderless {
+    color: $secondary-color;
+    background: transparent;
+    border: none;
+  }
+}
