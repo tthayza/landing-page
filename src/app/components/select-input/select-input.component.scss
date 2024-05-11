@@ -1,0 +1,16 @@
+@import "../../../styles.scss";
+
+.mat-mdc-form-field {
+  width: 100%;
+}
+::ng-deep .mat-mdc-text-field-wrapper {
+  background-color: $primary-color-120 !important;
+}
+
+::ng-deep .mat-mdc-floating-label.mdc-floating-label {
+  color: $gray-2 !important;
+}
+
+::ng-deep .mat-mdc-select-arrow svg {
+  fill: $gray-2 !important;
+}
