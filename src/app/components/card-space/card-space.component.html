@@ -1,0 +1,28 @@
+<div [ngClass]="['card-space', type]">
+  <figure>
+    @if (type == 'card-space-img') {
+    <img src="{{ contentImg }}" alt="" />
+    } @else {
+    <img src="../../../assets/mask-group.svg" class="mask-group-img" />
+
+    <div class="text-information">
+      <h4>Private Space</h4>
+      <p>
+        Comfortable space, Full speed wifi, Free coffe & Snack and many more
+      </p>
+    </div>
+    } @if (type == 'card-space-img'){
+    <button>
+      <img src="../../../assets/arrow-btn.svg" />
+    </button>
+    } @else {
+    <button class="check-btn">
+      Check avaibility
+      <img src="../../../assets/arrow-btn.svg" />
+    </button>
+    }
+  </figure>
+  @if(figcaption) {
+  <figcaption>{{ figcaption }}</figcaption>
+  }
+</div>
