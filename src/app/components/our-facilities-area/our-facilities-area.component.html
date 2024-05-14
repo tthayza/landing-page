@@ -1,0 +1,29 @@
+<section class="facilities-area">
+  <section class="facilities-section">
+    <div class="facilities-heading">
+      <h3>Our Facilities</h3>
+      <div class="divider"></div>
+    </div>
+    <h2>All facilities are designed to meet all your needs</h2>
+  </section>
+  <section class="facilities-main-content">
+    <div class="wrapper-bar-navigation">
+      <div class="wrapper-progress-bar">
+        <div class="vertical-bar">
+          <div class="fill-bar"></div>
+        </div>
+        <p class="data-bar">01<span>/04</span></p>
+      </div>
+      <nav class="facilities-nav">
+        <ul>
+          @for (facility of facilitiesList; track facility) {
+          <li>{{ facility }}</li>
+          }
+        </ul>
+      </nav>
+    </div>
+    <figure>
+      <img src="../../../assets/cozy-cafe.png" alt="" />
+    </figure>
+  </section>
+</section>
