@@ -72,13 +72,13 @@ h3 {
   background-color: $primary-color;
   width: 25%;
   height: 80%;
-  padding: 1.5rem;
   position: absolute;
   justify-content: center;
   align-items: center;
   margin: 4% 0 0 15%;
   & form {
     @include flex-column-gap();
+    padding: 3.2rem;
   }
   & form h2 {
     font-family: "Lora";
