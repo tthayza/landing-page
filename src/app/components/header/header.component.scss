@@ -17,13 +17,13 @@ a {
 }
 
 ul {
-  list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 li {
   font-weight: bold;
   font-size: 1.6rem;
   color: $black-color;
+  font-family: "Lato";
 }
