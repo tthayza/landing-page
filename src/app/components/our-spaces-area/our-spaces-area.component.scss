@@ -1,5 +1,10 @@
 @import "../../../styles.scss";
 
+@mixin progress-bar {
+  border-radius: 2rem;
+  height: 0.5rem;
+}
+
 .our-spaces-area {
   display: flex;
   flex-direction: column;
@@ -31,4 +36,35 @@
 .spaces-carousel {
   display: flex;
   justify-content: space-between;
+}
+
+.wrapper-bar-carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+
+  & .bar {
+    @include progress-bar();
+    width: 20%;
+    background-color: $gray-3;
+    position: relative;
+    z-index: 1;
+  }
+  & .fill-bar {
+    @include progress-bar();
+    width: 25%;
+    position: absolute;
+    background-color: $secondary-color-120;
+    z-index: 3;
+  }
+  & p {
+    font-size: 1.6rem;
+  }
+  & span {
+    font-family: "Lato";
+    font-size: 1.2rem;
+    color: $gray-1;
+  }
 }
