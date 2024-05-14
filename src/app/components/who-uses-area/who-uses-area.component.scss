@@ -1,0 +1,32 @@
+@import "../../../styles.scss";
+
+.who-uses-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & .heading-who-uses {
+    display: flex;
+    gap: 1.6rem;
+    flex-direction: column;
+    & h2 {
+      font-family: "Lora";
+      color: $primary-color;
+      font-size: 4rem;
+      text-align: center;
+    }
+    & p {
+      color: $gray-1;
+      font-size: 1.8rem;
+      font-family: "Lato";
+      margin: 2.4rem 0;
+    }
+  }
+  & .brands-wrapper {
+    width: 100%;
+    margin-top: 2rem;
+    & ul {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}

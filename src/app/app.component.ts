@@ -5,6 +5,7 @@ import { IntroducingAreaComponent } from './components/introducing-area/introduc
 import { OurSpacesAreaComponent } from './components/our-spaces-area/our-spaces-area.component';
 import { AboutAreaComponent } from './components/about-area/about-area.component';
 import { OurFacilitiesAreaComponent } from './components/our-facilities-area/our-facilities-area.component';
+import { WhoUsesAreaComponent } from './components/who-uses-area/who-uses-area.component';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,7 @@ import { OurFacilitiesAreaComponent } from './components/our-facilities-area/our
     OurSpacesAreaComponent,
     AboutAreaComponent,
     OurFacilitiesAreaComponent,
+    WhoUsesAreaComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
