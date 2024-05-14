@@ -1,0 +1,43 @@
+@import "../../../styles.scss";
+
+.divider {
+  @include divisor();
+}
+
+.frispes-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+  & .wrapper-carousel {
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+    width: 40%;
+    & .heading-carousel {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      & h2 {
+        font-family: "Lato";
+        font-size: 2rem;
+        font-weight: 400;
+      }
+    }
+    & h3 {
+      font-family: "Lora";
+      color: $primary-color;
+      font-size: 4rem;
+    }
+    & .arrow-wrapper {
+      display: flex;
+      gap: 2.4rem;
+    }
+  }
+  & .wrapper-gallery {
+    display: flex;
+    height: 35rem;
+    align-items: last baseline;
+    justify-content: space-around;
+    gap: 4rem;
+  }
+}
