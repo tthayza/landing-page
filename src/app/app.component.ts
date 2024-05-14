@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { IntroducingAreaComponent } from './components/introducing-area/introducing-area.component';
 import { OurSpacesAreaComponent } from './components/our-spaces-area/our-spaces-area.component';
+import { AboutAreaComponent } from './components/about-area/about-area.component';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,7 @@ import { OurSpacesAreaComponent } from './components/our-spaces-area/our-spaces-
     HeaderComponent,
     IntroducingAreaComponent,
     OurSpacesAreaComponent,
+    AboutAreaComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

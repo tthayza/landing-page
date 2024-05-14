@@ -1,0 +1,49 @@
+@import "../../../styles.scss";
+.about-area {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  & .grade-infos {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 10rem;
+  }
+
+  & .wrapper-text-info {
+    display: flex;
+    flex-direction: column;
+    padding: 8rem 4rem 8rem 8rem;
+    background-color: $primary-color;
+    width: 40%;
+    color: $white-color;
+    gap: 2rem;
+
+    & .heading-about {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+
+      & h4 {
+        font-size: 2.2rem;
+        font-family: "Lato";
+        font-weight: 400;
+      }
+      & .divider {
+        @include divisor();
+        background-color: $white-color;
+      }
+    }
+    & h2 {
+      font-family: "Lora";
+      font-size: 3.6rem;
+      width: 70%;
+    }
+    & p {
+      font-size: 2rem;
+      font-family: "Lato";
+      width: 70%;
+    }
+  }
+}

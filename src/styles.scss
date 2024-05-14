@@ -40,3 +40,9 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+@mixin divisor {
+  width: 6rem;
+  height: 0.2rem;
+  background-color: $black-color;
+}

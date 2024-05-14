@@ -1,0 +1,22 @@
+@import "../../../styles.scss";
+
+.info-card-wrapper {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  & .data-infos-card {
+    display: flex;
+    flex-direction: column;
+  }
+  & h3 {
+    font-family: "Lora";
+    font-weight: 400;
+    font-size: 2.8rem;
+    color: $primary-color;
+  }
+  & p {
+    color: $gray-1;
+    font-family: "Lato";
+    font-size: 1.6rem;
+  }
+}
