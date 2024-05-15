@@ -8,6 +8,7 @@ import { OurFacilitiesAreaComponent } from './components/our-facilities-area/our
 import { WhoUsesAreaComponent } from './components/who-uses-area/who-uses-area.component';
 import { FrispesGalleryAreaComponent } from './components/frispes-gallery-area/frispes-gallery-area.component';
 import { ReviewsAreaComponent } from './components/reviews-area/reviews-area.component';
+import { HelpCenterAreaComponent } from './components/help-center-area/help-center-area.component';
 
 @Component({
   selector: 'app-root',
@@ -22,6 +23,7 @@ import { ReviewsAreaComponent } from './components/reviews-area/reviews-area.com
     WhoUsesAreaComponent,
     FrispesGalleryAreaComponent,
     ReviewsAreaComponent,
+    HelpCenterAreaComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
