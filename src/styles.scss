@@ -47,3 +47,7 @@ body {
   height: 0.2rem;
   background-color: $black-color;
 }
+@mixin progress-bar {
+  border-radius: 2rem;
+  height: 0.5rem;
+}
