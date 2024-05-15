@@ -1,0 +1,32 @@
+<div class="news-card">
+  @if (infosNews.main) {
+  <div class="main-news">
+    <figure class="news-img">
+      <img src="{{ infosNews.img }}" alt="" />
+    </figure>
+    <div class="news-infos">
+      <h4>{{ infosNews.title }}</h4>
+      <p>{{ infosNews.content }}</p>
+      <div class="news-infos-author">
+        <figure>
+          <img src="{{ infosNews.authorInfos?.img }}" />
+        </figure>
+        <div class="details-author">
+          <p>{{ infosNews.authorInfos?.authorName }}</p>
+          <p>{{ infosNews.authorInfos?.occupation }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  } @else {
+  <div class="news-item">
+    <figure>
+      <img src="{{ infosNews.img }}" alt="" />
+    </figure>
+    <div class="news-item-infos">
+      <h4>{{ infosNews.title }}</h4>
+      <p>{{ infosNews.authorName }}</p>
+    </div>
+  </div>
+  }
+</div>
