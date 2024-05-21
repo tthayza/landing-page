@@ -1,0 +1,11 @@
+<section class="news-section">
+  <div class="heading-news">
+    <h3>News, events and insights for you</h3>
+    <a>See more <img src="../../../../assets/orange-arrow-right.svg" /> </a>
+  </div>
+  <div class="grid-news">
+    @for (newsItem of news; track newsItem) {
+    <app-news-card [infosNews]="newsItem"></app-news-card>
+    }
+  </div>
+</section>

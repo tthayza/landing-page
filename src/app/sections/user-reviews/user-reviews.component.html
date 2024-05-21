@@ -1,0 +1,30 @@
+<section class="reviews-area">
+  <div class="wrapper-section">
+    <div class="wrapper-heading">
+      <div class="review-heading">
+        <h2>Reviews</h2>
+        <div class="divider"></div>
+      </div>
+      <h3>
+        What our customers <br />
+        are saying
+      </h3>
+    </div>
+    <div class="arrow-wrapper">
+      <img src="../../../../assets/left-arrow.svg" />
+      <img src="../../../../assets/right-arrow.svg" />
+    </div>
+  </div>
+  <div class="carousel-reviews">
+    <div class="wrapper-carousel-reviews">
+      @for (review of reviews; track review) {
+      <app-review-card [reviewInfos]="review"></app-review-card>
+      }
+    </div>
+    <div class="wrapper-bar-carousel">
+      <div class="bar">
+        <div class="fill-bar"></div>
+      </div>
+    </div>
+  </div>
+</section>

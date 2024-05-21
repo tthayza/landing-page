@@ -1,31 +1,29 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './components/header/header.component';
-import { IntroducingAreaComponent } from './components/introducing-area/introducing-area.component';
-import { OurSpacesAreaComponent } from './components/our-spaces-area/our-spaces-area.component';
-import { AboutAreaComponent } from './components/about-area/about-area.component';
-import { OurFacilitiesAreaComponent } from './components/our-facilities-area/our-facilities-area.component';
-import { WhoUsesAreaComponent } from './components/who-uses-area/who-uses-area.component';
-import { FrispesGalleryAreaComponent } from './components/frispes-gallery-area/frispes-gallery-area.component';
-import { ReviewsAreaComponent } from './components/reviews-area/reviews-area.component';
-import { HelpCenterAreaComponent } from './components/help-center-area/help-center-area.component';
-import { NewsAreaComponent } from './components/news-area/news-area.component';
+import { HeaderComponent } from './sections/header/header.component';
+import { IntroducingComponent } from './sections/introducing/introducing.component';
+import { OurSpacesComponent } from './sections/our-spaces/our-spaces.component';
+import { AboutComponent } from './sections/about/about.component';
+import { OurFacilitiesComponent } from './sections/our-facilities/our-facilities.component';
+import { WhoUsesComponent } from './sections/who-uses/who-uses.component';
+import { FrispesGalleryComponent } from './sections/frispes-gallery/frispes-gallery.component';
+import { UserReviewsComponent } from './sections/user-reviews/user-reviews.component';
+import { HelpCenterComponent } from './sections/help-center/help-center.component';
+import { NewsFeedComponent } from './sections/news-feed/news-feed.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet,
     HeaderComponent,
-    IntroducingAreaComponent,
-    OurSpacesAreaComponent,
-    AboutAreaComponent,
-    OurFacilitiesAreaComponent,
-    WhoUsesAreaComponent,
-    FrispesGalleryAreaComponent,
-    ReviewsAreaComponent,
-    HelpCenterAreaComponent,
-    NewsAreaComponent,
+    IntroducingComponent,
+    OurSpacesComponent,
+    AboutComponent,
+    OurFacilitiesComponent,
+    WhoUsesComponent,
+    FrispesGalleryComponent,
+    UserReviewsComponent,
+    HelpCenterComponent,
+    NewsFeedComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
