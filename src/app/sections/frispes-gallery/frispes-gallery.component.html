@@ -14,9 +14,8 @@
     </div>
   </div>
   <div class="wrapper-gallery">
-    <img src="../../../../assets/image 1.png" alt="" />
-    <img src="../../../../assets/image 2.png" alt="" />
-    <img src="../../../../assets/image 3.png" alt="" />
-    <img src="../../../../assets/image 4.png" alt="" />
+    @for (image of gallery; track image) {
+    <img src="{{ image.path }}" alt="{{ image.alt }}" />
+    }
   </div>
 </section>

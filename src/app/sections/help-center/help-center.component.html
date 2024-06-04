@@ -4,27 +4,9 @@
     you need in our Help Center
   </h3>
   <div class="cards-wrapper-helpcenter">
-    <app-helpcenter-card
-      [variant]="{
-        theme: 'white',
-        textContent: 'How do I know if a space is available?',
-        arrowIcon: '../../../../assets/white-down-arrow.svg'
-      }"
-    />
-    <app-helpcenter-card
-      [variant]="{
-        theme: 'orange',
-        textContent: 'How do i book a space?',
-        arrowIcon: '../../../../assets/orange-down-arrow.svg'
-      }"
-    />
-    <app-helpcenter-card
-      [variant]="{
-        theme: 'white',
-        textContent: 'How do reviews work?',
-        arrowIcon: '../../../../assets/white-down-arrow.svg'
-      }"
-    />
+    @for (card of cards; track card) {
+    <app-helpcenter-card [variant]="card" />
+    }
   </div>
   <a>More questions <img src="../../../../assets/orange-arrow-right.svg" /> </a>
 </section>

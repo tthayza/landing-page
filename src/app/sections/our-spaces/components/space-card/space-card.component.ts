@@ -1,6 +1,7 @@
 import { CommonModule, NgClass } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { ButtonComponent } from '../../../../components/button/button.component';
+import { ISpaceCardProperties } from '../../space-card-interface';
 
 @Component({
   selector: 'app-space-card',
@@ -10,7 +11,5 @@ import { ButtonComponent } from '../../../../components/button/button.component'
   styleUrl: './space-card.component.scss',
 })
 export class SpaceCardComponent {
-  @Input() type!: string;
-  @Input() contentImg!: string;
-  @Input() figcaption?: string;
+  @Input() properties!: ISpaceCardProperties;
 }
