@@ -10,7 +10,4 @@ import { IAboutInfo } from '../../info.interface';
 })
 export class FrispesDataCardComponent {
   @Input() infoCard!: IAboutInfo;
-  ngOnInit() {
-    console.log(this.infoCard);
-  }
 }

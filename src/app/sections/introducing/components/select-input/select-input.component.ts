@@ -14,7 +14,4 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 export class SelectInputComponent {
   @Input() options!: string[];
   @Input() label!: string;
-  ngOnInit() {
-    console.log(this.options);
-  }
 }
