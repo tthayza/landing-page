@@ -10,7 +10,6 @@ import { IReviewInfos } from './components/review-card/review-infos.interface';
   styleUrl: './user-reviews.component.scss',
 })
 export class UserReviewsComponent {
-  // reviews: IReviewInfos[] = [];
   reviews: IReviewInfos[] = [
     {
       userReview:

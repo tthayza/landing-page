@@ -11,17 +11,10 @@
     </div>
   </div>
   <div class="spaces-carousel">
-    <app-space-card
-      contentImg="../../../../assets/space-card-1.png"
-      type="card-space-img"
-      figcaption="Working with team"
-    />
-    <app-space-card type="card-space-standard" />
-    <app-space-card
-      contentImg="../../../../assets/space-card-2.png"
-      type="card-space-img"
-      figcaption="Custom Office"
-    />
+    @for (cardItem of spacesCard; track cardItem){
+
+    <app-space-card [properties]="cardItem" />
+    }
   </div>
   <div class="wrapper-bar-carousel">
     <div class="bar">

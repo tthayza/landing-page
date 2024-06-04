@@ -19,15 +19,9 @@
     <div class="form-area">
       <form>
         <h2>Find your space now</h2>
-        <app-select-input [options]="location.options" label="Location" />
-        <app-select-input
-          [options]="['Private Office', 'Public Office']"
-          label="Type"
-        />
-        <app-select-input
-          [options]="['9 Aug 2024', '8 Jul 2024']"
-          label="Date"
-        />
+        @for (select of selectInputsValues; track select){
+        <app-select-input [selectValues]="select" />
+        }
         <app-button
           textContent="FIND MY SPACE"
           type="contained-form contained"

@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { ISelectInput } from '../../select-input-interface';
 
 @Component({
   selector: 'app-select-input',
@@ -12,6 +13,5 @@ import { MatFormFieldModule } from '@angular/material/form-field';
   styleUrl: './select-input.component.scss',
 })
 export class SelectInputComponent {
-  @Input() options!: string[];
-  @Input() label!: string;
+  @Input() selectValues!: ISelectInput;
 }

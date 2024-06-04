@@ -1,7 +1,7 @@
-<div [ngClass]="['card-space', type]">
+<div [ngClass]="['card-space', properties.type]">
   <figure>
-    @if (type == 'card-space-img') {
-    <img src="{{ contentImg }}" alt="" />
+    @if (properties.type == 'card-space-img') {
+    <img src="{{ properties.path }}" alt="" />
     } @else {
     <img src="../../../../assets/mask-group.svg" class="mask-group-img" />
 
@@ -11,7 +11,7 @@
         Comfortable space, Full speed wifi, Free coffe & Snack and many more
       </p>
     </div>
-    } @if (type == 'card-space-img'){
+    } @if (properties.type == 'card-space-img'){
     <button>
       <img src="../../../../assets/arrow-btn.svg" />
     </button>
@@ -22,7 +22,7 @@
     </button>
     }
   </figure>
-  @if(figcaption) {
-  <figcaption>{{ figcaption }}</figcaption>
+  @if(properties.figcaption) {
+  <figcaption>{{ properties.figcaption }}</figcaption>
   }
 </div>

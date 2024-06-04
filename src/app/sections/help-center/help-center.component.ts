@@ -8,4 +8,22 @@ import { HelpCenterCardComponent } from './components/helpcenter-card/helpcenter
   templateUrl: './help-center.component.html',
   styleUrl: './help-center.component.scss',
 })
-export class HelpCenterComponent {}
+export class HelpCenterComponent {
+  cards = [
+    {
+      theme: 'white',
+      textContent: 'How do I know if a space is available?',
+      arrowIcon: '../../../../assets/white-down-arrow.svg',
+    },
+    {
+      theme: 'orange',
+      textContent: 'How do i book a space?',
+      arrowIcon: '../../../../assets/orange-down-arrow.svg',
+    },
+    {
+      theme: 'white',
+      textContent: 'How do reviews work?',
+      arrowIcon: '../../../../assets/white-down-arrow.svg',
+    },
+  ];
+}
