@@ -1,27 +1,27 @@
-<section class="reviews-area">
+<section class="reviews-area flex-col">
   <div class="wrapper-section">
-    <div class="wrapper-heading">
+    <div class="wrapper-heading flex-col">
       <div class="review-heading">
-        <h2>Reviews</h2>
+        <h3 class="heading-section-h3">Reviews</h3>
         <div class="divider"></div>
       </div>
-      <h3>
+      <h2 class="heading-section-h2">
         What our customers <br />
         are saying
-      </h3>
+      </h2>
     </div>
     <div class="arrow-wrapper">
       <img src="../../../../assets/left-arrow.svg" />
       <img src="../../../../assets/right-arrow.svg" />
     </div>
   </div>
-  <div class="carousel-reviews">
+  <div class="carousel-reviews flex-col">
     <div class="wrapper-carousel-reviews">
       @for (review of reviews; track review) {
       <app-review-card [reviewInfos]="review" />
       }
     </div>
-    <div class="wrapper-bar-carousel">
+    <div class="wrapper-bar-carousel flex-col">
       <div class="bar">
         <div class="fill-bar"></div>
       </div>

@@ -1,9 +1,10 @@
 @import "../../../../../styles.scss";
+@import "../../../../../styles/elements.scss";
+@import "../../../../../styles/mixins.scss";
 .news-card {
   box-shadow: (0px 0px 6px #979191);
   width: fit-content;
   height: fit-content;
-
   & .main-news {
     display: flex;
     gap: 3rem;
@@ -16,8 +17,6 @@
       }
     }
     & .news-infos {
-      display: flex;
-      flex-direction: column;
       justify-content: space-around;
       gap: 1.6rem;
       & h4 {
@@ -31,36 +30,28 @@
         line-height: 2.8rem;
       }
       & .news-infos-author {
-        display: flex;
-        align-items: center;
+        @include alignment(flex-start, center);
         gap: 2rem;
-        & .details-author {
-          display: flex;
-          flex-direction: column;
-          & p:first-child {
-            color: $black-color;
-            font-weight: 700;
-            font-size: 2rem;
-          }
-          & p {
-            color: $gray-1;
-            font-weight: 400;
-            font-family: "Lato";
-            width: 100%;
-            font-size: 1.6rem;
-          }
+        & p:first-child {
+          color: $black-color;
+          font-weight: 700;
+          font-size: 2rem;
+        }
+        & p {
+          color: $gray-1;
+          font-weight: 400;
+          font-family: "Lato";
+          width: 100%;
+          font-size: 1.6rem;
         }
       }
     }
   }
+
   & .news-item {
-    // border: solid saddlebrown 3px;
+    @include alignment(space-between, stretch);
     width: 50rem;
     height: 36rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
     & figure {
       height: 70%;
       & img {
@@ -70,8 +61,6 @@
       }
     }
     & .news-item-infos {
-      display: flex;
-      flex-direction: column;
       gap: 2rem;
       padding: 1.6rem;
       & h4 {

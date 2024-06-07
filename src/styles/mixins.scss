@@ -1,0 +1,26 @@
+//elements mixins
+@mixin divisor($color) {
+  width: 6rem;
+  height: 0.2rem;
+  background-color: $color;
+}
+
+@mixin progress-bar($direction, $width, $bg-color, $position, $axis) {
+  border-radius: 2rem;
+  height: 0.5rem;
+  width: $width;
+  background-color: $bg-color;
+  position: $position;
+  display: flex;
+  z-index: $axis;
+  @if $direction != row {
+    flex-direction: column;
+    height: 16rem;
+  }
+}
+
+@mixin alignment($justifying, $align) {
+  display: flex;
+  justify-content: $justifying;
+  align-items: $align;
+}

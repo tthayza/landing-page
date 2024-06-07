@@ -1,65 +1,44 @@
 @import "../../../styles.scss";
+@import "../../../styles/tipography.scss";
+@import "../../../styles/mixins.scss";
+@import "../../../styles/elements.scss";
 
 .our-spaces-area {
-  display: flex;
-  flex-direction: column;
   padding: 6rem;
   gap: 3.2rem;
-}
 
-.heading-our-spaces {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  & h2 {
-    font-family: "Lora";
-    color: $primary-color;
-    font-size: 4rem;
+  & .heading-our-spaces {
+    @include alignment(space-between, center);
+    & p {
+      color: $gray-1;
+      font-size: 1.8rem;
+      width: 27%;
+      font-family: "Lato";
+    }
   }
-  & p {
-    color: $gray-1;
-    font-size: 1.8rem;
-    width: 27%;
-    font-family: "Lato";
-  }
-  & .arrow-wrapper {
-    display: flex;
-    gap: 2.4rem;
-  }
-}
 
-.spaces-carousel {
-  display: flex;
-  justify-content: space-between;
-}
+  & .spaces-carousel {
+    @include alignment(space-between, stretch);
+  }
 
-.wrapper-bar-carousel {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1.2rem;
+  & .wrapper-bar-carousel {
+    @include alignment(center, center);
 
-  & .bar {
-    @include progress-bar();
-    width: 20%;
-    background-color: $gray-3;
-    position: relative;
-    z-index: 1;
-  }
-  & .fill-bar {
-    @include progress-bar();
-    width: 25%;
-    position: absolute;
-    background-color: $secondary-color-120;
-    z-index: 3;
-  }
-  & p {
-    font-size: 1.6rem;
-  }
-  & span {
-    font-family: "Lato";
-    font-size: 1.2rem;
-    color: $gray-1;
+    gap: 1.2rem;
+
+    & .bar {
+      @include progress-bar(row, 20%, $gray-3, relative, 1);
+    }
+    & .fill-bar {
+      @include progress-bar(row, 25%, $secondary-color-120, absolute, 3);
+    }
+    & p {
+      font-size: 1.6rem;
+    }
+    & span {
+      font-family: "Lato";
+      font-size: 1.2rem;
+      color: $gray-1;
+    }
   }
 }

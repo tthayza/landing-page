@@ -1,92 +1,64 @@
 @import "../../../styles.scss";
+@import "../../../styles/tipography.scss";
+@import "../../../styles/mixins.scss";
+@import "../../../styles/elements.scss";
 
 .facilities-area {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   gap: 4rem;
 
   & .facilities-section {
-    display: flex;
-    flex-direction: column;
     gap: 2rem;
-  }
-  & .facilities-heading {
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
-    & h3 {
-      font-family: "Lato";
-      font-size: 2.4rem;
-      font-weight: 400;
-    }
-    & .divider {
-      @include divisor;
-    }
-  }
-  & h2 {
-    font-size: 4rem;
-    font-family: "Lora";
-    color: $primary-color;
-    width: 30%;
-  }
-
-  .facilities-main-content {
-    display: flex;
-    justify-content: space-between;
-
-    & {
-      .wrapper-progress-bar {
-        display: flex;
-        flex-direction: column;
-
-        & .vertical-bar {
-          height: 16rem;
-          width: 0.5rem;
-          border-radius: 2rem;
-          background-color: $gray-3;
-          position: relative;
-          z-index: 1;
-          & .fill-bar {
-            position: absolute;
-            border-radius: 2rem;
-            height: 25%;
-            width: inherit;
-            background-color: $secondary-color;
-            z-index: 3;
-          }
-        }
-        & .data-bar {
-          transform: rotate(180deg);
-          writing-mode: vertical-rl;
-          color: $primary-color;
-          font-size: 1.8rem;
-          font-family: "Lato";
-          margin: 0.5rem -0.7rem;
-          & span {
-            font-size: 1.6rem;
-            color: $gray-1;
-          }
-        }
+    & .facilities-heading {
+      @include alignment(flex-start, center);
+      gap: 1.2rem;
+      & .divider {
+        @include divisor($black-color);
       }
     }
+  }
+
+  & .facilities-main-content {
+    @include alignment(space-between, stretch);
     & .wrapper-bar-navigation {
       display: flex;
       gap: 4.4rem;
       align-items: center;
       width: 40%;
-    }
-    & .facilities-nav ul {
-      left: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 3.2rem;
-      & li {
+
+      & .vertical-bar {
+        @include progress-bar(column, 0.5rem, $gray-3, relative, 1);
+        & .fill-bar {
+          @include progress-bar(column, inherit, $secondary-color, absolute, 3);
+          height: 25%;
+        }
+      }
+      & .data-bar {
+        transform: rotate(180deg);
+        writing-mode: vertical-rl;
+        color: $primary-color;
+        font-size: 1.8rem;
         font-family: "Lato";
-        font-size: 2.4rem;
-        font-weight: 700;
+        margin: 0.5rem -0.7rem;
+        & span {
+          font-size: 1.6rem;
+          color: $gray-1;
+        }
+      }
+
+      & .facilities-nav ul {
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+        & li {
+          font-family: "Lato";
+          font-size: 2.4rem;
+          font-weight: 700;
+        }
       }
     }
+
     & figure {
       width: 50%;
       & img {

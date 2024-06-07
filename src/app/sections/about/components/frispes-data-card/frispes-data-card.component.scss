@@ -1,12 +1,8 @@
 @import "../../../../../styles.scss";
+@import "../../../../../styles/mixins.scss";
 .info-card-wrapper {
-  display: flex;
+  @include alignment(flex-start, center);
   gap: 1.6rem;
-  align-items: center;
-  & .data-infos-card {
-    display: flex;
-    flex-direction: column;
-  }
   & h3 {
     font-family: "Lora";
     font-weight: 400;

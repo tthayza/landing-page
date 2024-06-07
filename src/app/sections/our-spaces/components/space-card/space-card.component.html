@@ -1,11 +1,11 @@
-<div [ngClass]="['card-space', properties.type]">
+<div [ngClass]="['card-space', properties.type, 'flex-align-justify-center']">
   <figure>
     @if (properties.type == 'card-space-img') {
     <img src="{{ properties.path }}" alt="" />
     } @else {
     <img src="../../../../assets/mask-group.svg" class="mask-group-img" />
 
-    <div class="text-information">
+    <div class="text-information flex-col">
       <h4>Private Space</h4>
       <p>
         Comfortable space, Full speed wifi, Free coffe & Snack and many more

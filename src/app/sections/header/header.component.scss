@@ -1,29 +1,24 @@
 @import "../../../styles.scss";
+@import "../../../styles/mixins.scss";
 
 header {
+  @include alignment(space-between, center);
   width: 100vw;
   padding: 2rem;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 4rem;
-}
-
-a {
-  font-family: $pf-display-bold;
-  font-size: 3rem;
-  color: $primary-color;
-}
-
-ul {
-  display: flex;
-  gap: 4rem;
-}
-
-li {
-  font-weight: bold;
-  font-size: 1.6rem;
-  color: $black-color;
-  font-family: "Lato";
+  & a {
+    font-family: $pf-display-bold;
+    font-size: 3rem;
+    color: $primary-color;
+  }
+  & ul {
+    display: flex;
+    gap: 4rem;
+    & li {
+      font-weight: bold;
+      font-size: 1.6rem;
+      color: $black-color;
+      font-family: "Lato";
+    }
+  }
 }
