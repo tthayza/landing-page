@@ -1,8 +1,7 @@
 @import "../../../styles.scss";
-
-.divider {
-  @include divisor();
-}
+@import "../../../styles/tipography.scss";
+@import "../../../styles/mixins.scss";
+@import "../../../styles/elements.scss";
 
 .frispes-gallery {
   display: flex;
@@ -17,27 +16,14 @@
       display: flex;
       align-items: center;
       gap: 1.6rem;
-      & h2 {
-        font-family: "Lato";
-        font-size: 2rem;
-        font-weight: 400;
+      & .divider {
+        @include divisor($black-color);
       }
-    }
-    & h3 {
-      font-family: "Lora";
-      color: $primary-color;
-      font-size: 4rem;
-    }
-    & .arrow-wrapper {
-      display: flex;
-      gap: 2.4rem;
     }
   }
   & .wrapper-gallery {
-    display: flex;
+    @include alignment(space-around, last baseline);
     height: 35rem;
-    align-items: last baseline;
-    justify-content: space-around;
     gap: 4rem;
   }
 }

@@ -1,71 +1,44 @@
 @import "../../../styles.scss";
+@import "../../../styles/tipography.scss";
+@import "../../../styles/mixins.scss";
+@import "../../../styles/elements.scss";
 
 .reviews-area {
-  display: flex;
-  flex-direction: column;
   gap: 4rem;
   & .wrapper-section {
-    display: flex;
-    justify-content: space-between;
+    @include alignment(space-between, center);
+
     & .wrapper-heading {
-      display: flex;
       align-items: baseline;
-      flex-direction: column;
       gap: 1.2rem;
       & .review-heading {
-        display: flex;
-        align-items: center;
+        @include alignment(flex-start, center);
         gap: 1.2rem;
-        & h2 {
-          font-family: "Lato";
-          font-size: 2.4rem;
-          font-weight: 400;
-        }
         & .divider {
-          @include divisor;
+          @include divisor($black-color);
         }
-      }
-      & h3 {
-        font-family: "Lora";
-        color: $primary-color;
-        font-size: 4rem;
       }
     }
-    & .arrow-wrapper {
-      display: flex;
-      gap: 2.4rem;
+    & .arrow-wrapper img {
+      height: 2rem;
     }
   }
   & .carousel-reviews {
-    display: flex;
-    flex-direction: column;
     gap: 4rem;
     & .wrapper-carousel-reviews {
-      display: flex;
-      justify-content: space-between;
+      @include alignment(space-between, stretch);
       gap: 2.4rem;
     }
-  }
-}
-.wrapper-bar-carousel {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1.2rem;
+    & .wrapper-bar-carousel {
+      @include alignment(center, center);
+      gap: 1.2rem;
 
-  & .bar {
-    @include progress-bar();
-    width: 20%;
-    background-color: $gray-3;
-    position: relative;
-    z-index: 1;
-  }
-  & .fill-bar {
-    @include progress-bar();
-    width: 25%;
-    position: absolute;
-    background-color: $secondary-color-120;
-    z-index: 3;
+      & .bar {
+        @include progress-bar(row, 20%, $gray-3, 1, relative);
+      }
+      & .fill-bar {
+        @include progress-bar(row, 25%, $secondary-color-120, 3, absolute);
+      }
+    }
   }
 }

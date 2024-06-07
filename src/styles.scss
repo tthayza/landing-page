@@ -26,28 +26,12 @@ $heading2: 40px;
   font-size: 62.5%;
 }
 
-.app {
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-  padding: auto;
-}
-
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-}
-
-@mixin divisor {
-  width: 6rem;
-  height: 0.2rem;
-  background-color: $black-color;
-}
-@mixin progress-bar {
-  border-radius: 2rem;
-  height: 0.5rem;
 }

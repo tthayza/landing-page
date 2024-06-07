@@ -1,26 +1,19 @@
 @import "../../../styles.scss";
+@import "../../../styles/tipography.scss";
+@import "../../../styles/elements.scss";
+@import "../../../styles/mixins.scss";
 .help-center-area {
-  display: flex;
-  flex-direction: column;
   gap: 4rem;
-  & h3 {
-    font-family: "Lora";
-    color: $primary-color;
-    font-size: 4rem;
-    text-align: center;
+  text-align: center;
+  & .cards-wrapper-helpcenter {
+    @include alignment(space-between, stretch);
   }
   & a {
-    display: flex;
-    align-items: center;
+    @include alignment(flex-start, center);
     gap: 1.2rem;
     align-self: center;
     font-family: "Lato";
     color: $secondary-color;
     font-size: 2rem;
   }
-}
-
-.cards-wrapper-helpcenter {
-  display: flex;
-  justify-content: space-between;
 }

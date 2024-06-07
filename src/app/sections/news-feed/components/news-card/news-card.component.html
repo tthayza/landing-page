@@ -4,14 +4,14 @@
     <figure class="news-img">
       <img src="{{ infosNews.img }}" alt="" />
     </figure>
-    <div class="news-infos">
+    <div class="news-infos flex-col">
       <h4>{{ infosNews.title }}</h4>
       <p>{{ infosNews.content }}</p>
       <div class="news-infos-author">
         <figure>
           <img src="{{ infosNews.authorInfos?.img }}" />
         </figure>
-        <div class="details-author">
+        <div class="details-author flex-col">
           <p>{{ infosNews.authorInfos?.authorName }}</p>
           <p>{{ infosNews.authorInfos?.occupation }}</p>
         </div>
@@ -19,11 +19,11 @@
     </div>
   </div>
   } @else {
-  <div class="news-item">
+  <div class="news-item flex-col">
     <figure>
       <img src="{{ infosNews.img }}" alt="" />
     </figure>
-    <div class="news-item-infos">
+    <div class="news-item-infos flex-col">
       <h4>{{ infosNews.title }}</h4>
       <p>{{ infosNews.authorName }}</p>
     </div>

@@ -1,13 +1,13 @@
 @import "../../../../../styles.scss";
+@import "../../../../../styles/elements.scss";
+@import "../../../../../styles/mixins.scss";
+
 .card-review-section {
+  @include alignment(space-around, center);
   background-color: $primary-color;
   width: 44rem;
   height: 40rem;
   color: $white-color;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
   padding: 0 2.4rem;
   & p {
     font-size: 1.6rem;
@@ -15,9 +15,7 @@
     font-family: "Lato";
   }
   & .user-infos-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include alignment(space-between, center);
     align-self: flex-start;
     gap: 2rem;
     & .user-infos p:first-child {

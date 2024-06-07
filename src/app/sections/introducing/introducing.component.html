@@ -1,7 +1,7 @@
 <section class="main-banner-section">
-  <section class="section-intro">
+  <section class="section-intro flex-col">
     <div class="section-heading">
-      <h3>Introducing</h3>
+      <h3 class="heading-section-h3">Introducing</h3>
       <div class="divider"></div>
     </div>
     <div class="heading-infos">
@@ -16,8 +16,8 @@
     </div>
   </section>
   <section class="section-image-form">
-    <div class="form-area">
-      <form>
+    <div class="form-area flex-col">
+      <form class="flex-col">
         <h2>Find your space now</h2>
         @for (select of selectInputsValues; track select){
         <app-select-input [selectValues]="select" />
