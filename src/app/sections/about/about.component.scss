@@ -2,7 +2,7 @@
 @import "../../../styles/mixins.scss";
 @import "../../../styles/tipography.scss";
 .about-area {
-  @include alignment(space-around, center);
+  @include flex-justify-align(center, space-around);
   & .grade-infos {
     display: grid;
     grid-template-columns: auto auto;
@@ -17,7 +17,7 @@
     gap: 2rem;
 
     & .heading-about {
-      @include alignment(flex-start, center);
+      @include alignment(center);
       gap: 1.6rem;
 
       & h4 {

@@ -6,8 +6,9 @@
       your team or personally
     </p>
     <div class="arrow-wrapper">
-      <img src="../../../../assets/left-arrow.svg" />
-      <img src="../../../../assets/right-arrow.svg" />
+      @for (arrow of arrows; track arrow) {
+      <img src="{{ arrow }}" />
+      }
     </div>
   </div>
   <div class="spaces-carousel">

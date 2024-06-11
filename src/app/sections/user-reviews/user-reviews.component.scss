@@ -6,13 +6,14 @@
 .reviews-area {
   gap: 4rem;
   & .wrapper-section {
-    @include alignment(space-between, center);
+    @include flex-justify-align(center, space-between);
 
     & .wrapper-heading {
+      @include alignment(baseline);
       align-items: baseline;
       gap: 1.2rem;
       & .review-heading {
-        @include alignment(flex-start, center);
+        @include alignment(center);
         gap: 1.2rem;
         & .divider {
           @include divisor($black-color);
@@ -26,11 +27,11 @@
   & .carousel-reviews {
     gap: 4rem;
     & .wrapper-carousel-reviews {
-      @include alignment(space-between, stretch);
+      @include justifying(space-between);
       gap: 2.4rem;
     }
     & .wrapper-bar-carousel {
-      @include alignment(center, center);
+      @include flex-justify-align(center, center);
       gap: 1.2rem;
 
       & .bar {

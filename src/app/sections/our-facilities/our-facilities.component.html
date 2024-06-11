@@ -18,7 +18,7 @@
         <p class="data-bar">01<span>/04</span></p>
       </div>
       <nav class="facilities-nav">
-        <ul>
+        <ul class="flex-col">
           @for (facility of facilitiesList; track facility) {
           <li>{{ facility }}</li>
           }
@@ -26,7 +26,7 @@
       </nav>
     </div>
     <figure>
-      <img src="../../../../assets/cozy-cafe.png" alt="Ambiente de Cafeteria" />
+      <img src="{{ bannerFacilities }}" alt="Ambiente de Cafeteria" />
     </figure>
   </section>
 </section>

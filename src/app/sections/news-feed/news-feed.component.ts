@@ -10,6 +10,7 @@ import { NewsCardComponent } from './components/news-card/news-card.component';
   styleUrl: './news-feed.component.scss',
 })
 export class NewsFeedComponent {
+  orangeArrowIcon: string = '../../../../assets/orange-arrow-right.svg';
   news: INewsInfos[] = [
     {
       main: true,

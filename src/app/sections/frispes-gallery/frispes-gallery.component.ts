@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './frispes-gallery.component.scss',
 })
 export class FrispesGalleryComponent {
+  arrows = [
+    '../../../../assets/left-arrow.svg',
+    '../../../../assets/right-arrow.svg',
+  ];
   gallery = [
     {
       path: '../../../../assets/gallery-image1.png',

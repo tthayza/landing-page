@@ -3,7 +3,7 @@
 @import "../../../../../styles/mixins.scss";
 
 .card-review-section {
-  @include alignment(space-around, center);
+  @include flex-justify-align(center, space-around);
   background-color: $primary-color;
   width: 44rem;
   height: 40rem;
@@ -15,7 +15,7 @@
     font-family: "Lato";
   }
   & .user-infos-wrapper {
-    @include alignment(space-between, center);
+    @include flex-justify-align(center, space-between);
     align-self: flex-start;
     gap: 2rem;
     & .user-infos p:first-child {

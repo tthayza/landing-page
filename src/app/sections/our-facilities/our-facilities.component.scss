@@ -4,13 +4,13 @@
 @import "../../../styles/elements.scss";
 
 .facilities-area {
-  justify-content: center;
+  @include justifying(center);
   gap: 4rem;
 
   & .facilities-section {
     gap: 2rem;
     & .facilities-heading {
-      @include alignment(flex-start, center);
+      @include alignment(center);
       gap: 1.2rem;
       & .divider {
         @include divisor($black-color);
@@ -19,11 +19,10 @@
   }
 
   & .facilities-main-content {
-    @include alignment(space-between, stretch);
+    @include justifying(space-between);
     & .wrapper-bar-navigation {
-      display: flex;
+      @include alignment(center);
       gap: 4.4rem;
-      align-items: center;
       width: 40%;
 
       & .vertical-bar {
@@ -48,8 +47,6 @@
 
       & .facilities-nav ul {
         left: 0;
-        display: flex;
-        flex-direction: column;
         gap: 3.2rem;
         & li {
           font-family: "Lato";

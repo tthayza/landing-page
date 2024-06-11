@@ -13,14 +13,22 @@
   position: $position;
   display: flex;
   z-index: $axis;
+  flex-direction: $direction;
+  //height condition
   @if $direction != row {
-    flex-direction: column;
     height: 16rem;
   }
 }
 
-@mixin alignment($justifying, $align) {
+@mixin justifying($justifying) {
   display: flex;
   justify-content: $justifying;
+}
+@mixin alignment($align) {
+  display: flex;
   align-items: $align;
+}
+@mixin flex-justify-align($align, $justifying) {
+  @include alignment($align);
+  justify-content: $justifying;
 }

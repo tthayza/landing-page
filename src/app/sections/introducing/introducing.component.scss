@@ -7,14 +7,14 @@
   padding: 0 2rem;
 
   & .section-heading {
-    @include alignment(flex-start, center);
+    @include alignment(center);
     gap: 2rem;
     & .divider {
       @include divisor($black-color);
     }
   }
   & .heading-infos {
-    @include alignment(space-between, stretch);
+    @include justifying(space-between);
 
     & h1 {
       font-size: 5.2rem;
@@ -31,11 +31,11 @@
     }
   }
   & .section-image-form {
-    @include alignment(space-between, stretch);
+    @include justifying(space-between);
     width: 100%;
     position: relative;
     & .form-area {
-      @include alignment(center, center);
+      @include flex-justify-align(center, center);
       background-color: $primary-color;
       width: 25%;
       height: 80%;

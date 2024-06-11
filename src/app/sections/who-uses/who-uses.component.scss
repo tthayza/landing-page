@@ -18,7 +18,7 @@
     width: 100%;
     margin-top: 2rem;
     & ul {
-      @include alignment(space-around, stretch);
+      @include justifying(space-around);
     }
   }
 }

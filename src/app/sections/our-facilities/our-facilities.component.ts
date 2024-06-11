@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './our-facilities.component.scss',
 })
 export class OurFacilitiesComponent {
+  bannerFacilities: string = '../../../../assets/cozy-cafe.png';
   facilitiesList = [
     'Spacious parking area',
     'Comfortable spaces',

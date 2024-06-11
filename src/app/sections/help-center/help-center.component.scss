@@ -6,10 +6,10 @@
   gap: 4rem;
   text-align: center;
   & .cards-wrapper-helpcenter {
-    @include alignment(space-between, stretch);
+    @include justifying(space-between);
   }
   & a {
-    @include alignment(flex-start, center);
+    @include alignment(center);
     gap: 1.2rem;
     align-self: center;
     font-family: "Lato";

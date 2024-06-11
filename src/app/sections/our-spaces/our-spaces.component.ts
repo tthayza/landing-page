@@ -11,6 +11,10 @@ import { CommonModule } from '@angular/common';
   styleUrl: './our-spaces.component.scss',
 })
 export class OurSpacesComponent {
+  arrows = [
+    '../../../../assets/left-arrow.svg',
+    '../../../../assets/right-arrow.svg',
+  ];
   spacesCard: ISpaceCardProperties[] = [
     {
       path: '../../../../assets/space-card-1.png',

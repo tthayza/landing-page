@@ -11,6 +11,7 @@ import { ISelectInput } from './select-input-interface';
   styleUrl: './introducing.component.scss',
 })
 export class IntroducingComponent {
+  officeImgPath: string = '../../../../assets/Image Slider.png';
   selectInputsValues: ISelectInput[] = [
     {
       label: 'Location',

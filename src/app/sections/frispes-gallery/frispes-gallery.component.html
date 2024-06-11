@@ -1,5 +1,5 @@
-<section class="frispes-gallery">
-  <div class="wrapper-carousel">
+<section class="frispes-gallery flex-col">
+  <div class="wrapper-carousel flex-col">
     <div class="heading-carousel">
       <h3 class="heading-section-h3">Frispes gallery</h3>
       <div class="divider"></div>
@@ -9,8 +9,9 @@
       co-working space gallery
     </h2>
     <div class="arrow-wrapper">
-      <img src="../../../../assets/left-arrow.svg" />
-      <img src="../../../../assets/right-arrow.svg" />
+      @for (arrow of arrows; track arrow) {
+      <img src="{{ arrow }}" />
+      }
     </div>
   </div>
   <div class="wrapper-gallery">

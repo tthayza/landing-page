@@ -2,7 +2,7 @@
 @import "../../../styles/mixins.scss";
 
 header {
-  @include alignment(space-between, center);
+  @include flex-justify-align(center, space-between);
   width: 100vw;
   padding: 2rem;
   margin-bottom: 4rem;

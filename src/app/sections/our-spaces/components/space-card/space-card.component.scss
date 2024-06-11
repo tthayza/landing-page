@@ -12,6 +12,7 @@
   }
 
   & button {
+    @include alignment(center);
     background-color: $secondary-color;
     border: none;
     padding: 2rem;
@@ -19,8 +20,6 @@
     left: 0;
     bottom: calc(0% + 2.7rem);
 
-    display: flex;
-    align-items: center;
     color: $white-color;
     font-size: 2rem;
     font-family: "Lato";
@@ -35,13 +34,13 @@
 }
 
 .card-space-standard {
-  @include alignment(center, center);
+  @include flex-justify-align(center, center);
   background-color: rgba(16, 55, 92, 30);
   width: 35rem;
   height: 46rem;
 
   & .text-information {
-    align-items: center;
+    @include alignment(center);
     gap: 1rem;
     color: $white-color;
   }

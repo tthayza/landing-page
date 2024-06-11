@@ -1,7 +1,7 @@
 @import "../../../../../styles.scss";
 @import "../../../../../styles/mixins.scss";
 .info-card-wrapper {
-  @include alignment(flex-start, center);
+  @include alignment(center);
   gap: 1.6rem;
   & h3 {
     font-family: "Lora";

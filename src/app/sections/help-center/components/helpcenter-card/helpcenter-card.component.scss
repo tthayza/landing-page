@@ -2,7 +2,7 @@
 @import "../../../../../styles/mixins.scss";
 @import "../../../../../styles/elements.scss";
 .answer-card {
-  @include alignment(center, center);
+  @include flex-justify-align(center, center);
   box-shadow: (0px 0px 12px #979191);
   height: 36rem;
   width: 40rem;

@@ -9,6 +9,7 @@ import { HelpCenterCardComponent } from './components/helpcenter-card/helpcenter
   styleUrl: './help-center.component.scss',
 })
 export class HelpCenterComponent {
+  arrowIconPath: string = '../../../../assets/orange-arrow-right.svg';
   cards = [
     {
       theme: 'white',

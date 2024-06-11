@@ -8,24 +8,22 @@
   margin: 0 -3.6rem;
   padding: 3.6rem;
 
-  & .heading-news {
-    @include alignment(space-between, center);
-    & a {
-      display: flex;
-      align-items: center;
-      gap: 1.2rem;
-      align-self: center;
+  .heading-news {
+    @include flex-justify-align(center, space-between);
+    a {
+      @include alignment(center);
+      gap: 1.6rem;
       font-family: "Lato";
       color: $secondary-color;
       font-size: 2rem;
     }
   }
-  & .grid-news {
+  .grid-news {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
     gap: 3rem;
-    & > *:first-child {
+    > *:first-child {
       grid-column: span 2;
     }
   }

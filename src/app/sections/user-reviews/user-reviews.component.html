@@ -11,8 +11,9 @@
       </h2>
     </div>
     <div class="arrow-wrapper">
-      <img src="../../../../assets/left-arrow.svg" />
-      <img src="../../../../assets/right-arrow.svg" />
+      @for (arrow of arrows; track arrow) {
+      <img src="{{ arrow }}" />
+      }
     </div>
   </div>
   <div class="carousel-reviews flex-col">
