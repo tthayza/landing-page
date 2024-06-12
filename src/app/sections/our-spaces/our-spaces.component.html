@@ -14,7 +14,31 @@
   <div class="spaces-carousel">
     @for (cardItem of spacesCard; track cardItem){
 
-    <app-space-card [properties]="cardItem" />
+    <div class="card-space flex-col">
+      <figure>
+        <img src="{{ cardItem.path }}" alt="" />
+      </figure>
+      @if (cardItem.maskImgPath){
+      <img src="../../../../assets/mask-group.svg" class="mask-group-img" />
+      <div class="text-information flex-col">
+        <h4>Private Space</h4>
+        <p>
+          Comfortable space, Full speed wifi, Free coffe & Snack and many more
+        </p>
+      </div>
+      <button class="check-btn">
+        Check avaibility
+        <img src="../../../../assets/arrow-btn.svg" />
+      </button>
+      } @else {
+
+      <button>
+        <img src="../../../../assets/arrow-btn.svg" />
+      </button>
+
+      <figcaption>{{ cardItem.figcaption }}</figcaption>
+      }
+    </div>
     }
   </div>
   <div class="wrapper-bar-carousel flex-col">

@@ -7,9 +7,9 @@
   padding: 6rem;
   gap: 3.2rem;
 
-  & .heading-our-spaces {
+  .heading-our-spaces {
     @include flex-justify-align(center, space-between);
-    & p {
+    p {
       color: $gray-1;
       font-size: 1.8rem;
       width: 27%;
@@ -17,25 +17,79 @@
     }
   }
 
-  & .spaces-carousel {
+  .spaces-carousel {
     @include justifying(space-between);
+    .card-space {
+      @include flex-justify-align(center, center);
+      position: relative;
+      button {
+        @include alignment(center);
+        background-color: $secondary-color;
+        border: none;
+        padding: 2rem;
+        position: absolute;
+        left: 0;
+        bottom: calc(0% + 3.3rem);
+
+        color: $white-color;
+        font-size: 2rem;
+        font-family: "Lato";
+      }
+      &:nth-child(even) {
+        position: relative;
+
+        .mask-group-img {
+          position: absolute;
+          right: 5%;
+          top: 5%;
+        }
+        .text-information {
+          position: absolute;
+          @include alignment(center);
+          gap: 1rem;
+          color: $white-color;
+        }
+        h4 {
+          font-family: "Playfair Display";
+          font-weight: 100;
+          font-size: 3.2rem;
+        }
+        p {
+          font-family: "Lato";
+          font-size: 1.8rem;
+          text-align: center;
+          width: 70%;
+        }
+      }
+      &:nth-child(odd) {
+        @include flex-justify-align(center, center);
+        width: 35rem;
+        height: 46rem;
+        figcaption {
+          text-align: center;
+          font-weight: bold;
+          font-size: 2rem;
+          font-family: "Lato";
+        }
+      }
+    }
   }
 
-  & .wrapper-bar-carousel {
+  .wrapper-bar-carousel {
     @include flex-justify-align(center, center);
 
     gap: 1.2rem;
 
-    & .bar {
+    .bar {
       @include progress-bar(row, 20%, $gray-3, relative, 1);
     }
-    & .fill-bar {
+    .fill-bar {
       @include progress-bar(row, 25%, $secondary-color-120, absolute, 3);
     }
-    & p {
+    p {
       font-size: 1.6rem;
     }
-    & span {
+    span {
       font-family: "Lato";
       font-size: 1.2rem;
       color: $gray-1;

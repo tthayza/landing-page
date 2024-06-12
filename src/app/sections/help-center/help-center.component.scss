@@ -7,7 +7,45 @@
   text-align: center;
   & .cards-wrapper-helpcenter {
     @include justifying(space-between);
+    .answer-card {
+      @include flex-justify-align(center, center);
+      box-shadow: (0px 0px 12px #979191);
+      height: 36rem;
+      width: 40rem;
+      position: relative;
+
+      &:nth-child(even) {
+        background-color: $secondary-color;
+        color: $white-color;
+        button {
+          background-color: white;
+        }
+      }
+      &:nth-child(odd) {
+        background-color: $white-color;
+        color: $black-color;
+        button {
+          background-color: $secondary-color;
+        }
+      }
+    }
+    & h5 {
+      font-family: "Lora";
+      font-size: 3.2rem;
+      font-weight: 400;
+      width: 70%;
+      text-align: center;
+    }
+    .arrow-btn {
+      border: none;
+      height: 4.8rem;
+      width: 6.4rem;
+      position: absolute;
+      left: calc(33rem / 2);
+      top: 92%;
+    }
   }
+
   & a {
     @include alignment(center);
     gap: 1.2rem;

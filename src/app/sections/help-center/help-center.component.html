@@ -5,7 +5,12 @@
   </h2>
   <div class="cards-wrapper-helpcenter">
     @for (card of cards; track card) {
-    <app-helpcenter-card [variant]="card" />
+    <section class="answer-card flex-col">
+      <h5>{{ card.textContent }}</h5>
+      <button class="arrow-btn">
+        <img src="{{ card.arrowIcon }}" />
+      </button>
+    </section>
     }
   </div>
   <a>More questions <img src="{{ arrowIconPath }}" /> </a>

@@ -1,12 +1,8 @@
 import { Component } from '@angular/core';
-import { SpaceCardComponent } from './components/space-card/space-card.component';
-import { ISpaceCardProperties } from './space-card-interface';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-our-spaces',
   standalone: true,
-  imports: [SpaceCardComponent],
   templateUrl: './our-spaces.component.html',
   styleUrl: './our-spaces.component.scss',
 })
@@ -15,7 +11,7 @@ export class OurSpacesComponent {
     '../../../../assets/left-arrow.svg',
     '../../../../assets/right-arrow.svg',
   ];
-  spacesCard: ISpaceCardProperties[] = [
+  spacesCard = [
     {
       path: '../../../../assets/space-card-1.png',
       alt: 'Escritório com várias pessoas trabalhando juntas',
@@ -23,7 +19,10 @@ export class OurSpacesComponent {
       figcaption: 'Working with team',
     },
     {
+      path: '../../../../assets/Rectangle 11.png',
       type: 'card-space-standard',
+      textContent: '',
+      maskImgPath: '../../../../assets/mask-group.svg',
     },
     {
       path: '../../../../assets/space-card-2.png',
