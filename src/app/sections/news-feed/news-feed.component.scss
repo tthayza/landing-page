@@ -2,6 +2,7 @@
 @import "../../../styles/elements.scss";
 @import "../../../styles/mixins.scss";
 @import "../../../styles/tipography.scss";
+@import "../../../styles/colors.scss";
 .news-section {
   background-color: $gray-4;
   gap: 4rem;
@@ -13,7 +14,6 @@
     a {
       @include alignment(center);
       gap: 1.6rem;
-      font-family: "Lato";
       color: $secondary-color;
       font-size: 2rem;
     }

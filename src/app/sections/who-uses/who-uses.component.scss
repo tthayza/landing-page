@@ -2,15 +2,15 @@
 @import "../../../styles/tipography.scss";
 @import "../../../styles/elements.scss";
 @import "../../../styles/mixins.scss";
+@import "../../../styles/colors.scss";
 
 .who-uses-area {
-  align-items: center;
+  @include alignment(center);
   & .heading-who-uses {
     gap: 1.6rem;
     & p {
       color: $gray-1;
       font-size: 1.8rem;
-      font-family: "Lato";
       margin: 2.4rem 0;
     }
   }

@@ -13,7 +13,6 @@
       color: $gray-1;
       font-size: 1.8rem;
       width: 27%;
-      font-family: "Lato";
     }
   }
 
@@ -33,7 +32,6 @@
 
         color: $white-color;
         font-size: 2rem;
-        font-family: "Lato";
       }
       &:nth-child(even) {
         position: relative;
@@ -50,12 +48,11 @@
           color: $white-color;
         }
         h4 {
-          font-family: "Playfair Display";
+          font-family: $pfDisplay;
           font-weight: 100;
           font-size: 3.2rem;
         }
         p {
-          font-family: "Lato";
           font-size: 1.8rem;
           text-align: center;
           width: 70%;
@@ -69,7 +66,6 @@
           text-align: center;
           font-weight: bold;
           font-size: 2rem;
-          font-family: "Lato";
         }
       }
     }
@@ -90,7 +86,6 @@
       font-size: 1.6rem;
     }
     span {
-      font-family: "Lato";
       font-size: 1.2rem;
       color: $gray-1;
     }

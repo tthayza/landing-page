@@ -1,17 +1,15 @@
 @import "../../../../../styles.scss";
 @import "../../../../../styles/mixins.scss";
+@import "../../../../../styles/colors.scss";
 .info-card-wrapper {
   @include alignment(center);
   gap: 1.6rem;
-  & h3 {
-    font-family: "Lora";
-    font-weight: 400;
+  & h5 {
     font-size: 2.8rem;
     color: $primary-color;
   }
   & p {
     color: $gray-1;
-    font-family: "Lato";
     font-size: 1.6rem;
   }
 }

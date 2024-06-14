@@ -1,35 +1,4 @@
-$primary-color: #10375c;
-$secondary-color: #ff5722;
-$primary-color-120: #0d2c4a;
-$secondary-color-120: #dd2c00;
-$black-color: #222831;
-$white-color: #ffffff;
-$gray-1: #9a9a9a;
-$gray-2: #c4c4c4;
-$gray-3: #dfdfdf;
-$gray-4: #f8f8f8;
-$pf-display-bold: "Playfair Display";
-
-$heading2: 40px;
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-}
-
-:root {
-  font-family: "Lato";
-  font-size: 62.5%;
-}
-
-html,
-body {
-  height: 100%;
-  overflow-x: hidden;
-}
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-}
+@import "./styles/colors.scss";
+@import "./styles/reset.scss";
+@import "./styles/tipography.scss";
+@import "./styles/base.scss";

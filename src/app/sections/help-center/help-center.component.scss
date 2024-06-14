@@ -2,6 +2,7 @@
 @import "../../../styles/tipography.scss";
 @import "../../../styles/elements.scss";
 @import "../../../styles/mixins.scss";
+@import "../../../styles/colors.scss";
 .help-center-area {
   gap: 4rem;
   text-align: center;
@@ -29,10 +30,8 @@
         }
       }
     }
-    & h5 {
-      font-family: "Lora";
+    & h6 {
       font-size: 3.2rem;
-      font-weight: 400;
       width: 70%;
       text-align: center;
     }
@@ -50,7 +49,6 @@
     @include alignment(center);
     gap: 1.2rem;
     align-self: center;
-    font-family: "Lato";
     color: $secondary-color;
     font-size: 2rem;
   }

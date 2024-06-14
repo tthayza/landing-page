@@ -1,5 +1,12 @@
+@import "./colors.scss";
+
 $lora: "Lora";
 $lato: "Lato";
+$pfDisplay: "Playfair Display";
+
+h1 {
+  font-family: $lora;
+}
 
 h2 {
   font-family: $lora;
@@ -11,4 +18,49 @@ h3 {
   font-family: $lato;
   font-size: 2.4rem;
   font-weight: 400;
+}
+
+h4 {
+  font-family: "Lato";
+}
+
+h5 {
+  font-family: $lora;
+  font-weight: 400;
+  font-size: 2.8rem;
+}
+
+h6 {
+  font-family: $lora;
+  font-size: 3.2rem;
+}
+
+p,
+li,
+span {
+  font-family: $lato;
+}
+
+button {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.data-bar {
+  font-family: $lato;
+  font-size: 1.8rem;
+  color: $primary-color;
+  span {
+    font-size: 1.6rem;
+    color: $gray-1;
+  }
+}
+
+a {
+  font-family: "Lato";
+}
+
+figcaption {
+  font-family: "Lato";
 }

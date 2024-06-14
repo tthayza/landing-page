@@ -1,6 +1,7 @@
 @import "../../../../../styles.scss";
 @import "../../../../../styles/elements.scss";
 @import "../../../../../styles/mixins.scss";
+@import "../../../../../styles/colors.scss";
 
 .card-review-section {
   @include flex-justify-align(center, space-around);
@@ -12,7 +13,6 @@
   & p {
     font-size: 1.6rem;
     line-height: 2rem;
-    font-family: "Lato";
   }
   & .user-infos-wrapper {
     @include flex-justify-align(center, space-between);

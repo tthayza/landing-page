@@ -1,5 +1,6 @@
 @import "../../../styles.scss";
 @import "../../../styles/mixins.scss";
+@import "../../../styles/colors.scss";
 
 header {
   @include flex-justify-align(center, space-between);
@@ -7,7 +8,7 @@ header {
   padding: 2rem;
   margin-bottom: 4rem;
   & a {
-    font-family: $pf-display-bold;
+    font-family: $pfDisplay;
     font-size: 3rem;
     color: $primary-color;
   }
@@ -15,10 +16,9 @@ header {
     display: flex;
     gap: 4rem;
     & li {
-      font-weight: bold;
+      font-weight: 700;
       font-size: 1.6rem;
       color: $black-color;
-      font-family: "Lato";
     }
   }
 }

@@ -2,6 +2,7 @@
 @import "../../../styles/tipography.scss";
 @import "../../../styles/mixins.scss";
 @import "../../../styles/elements.scss";
+@import "../../../styles/colors.scss";
 
 .main-banner-section {
   padding: 0 2rem;
@@ -19,9 +20,10 @@
     & h1 {
       font-size: 5.2rem;
       width: 40%;
-      font-family: "Lora";
+
       & span {
         color: $primary-color;
+        font-size: 5.2rem;
       }
     }
     & p {
@@ -45,11 +47,10 @@
       & form {
         gap: 1rem;
         padding: 3.2rem;
-      }
-      & form h2 {
-        font-family: "Lora";
-        color: $white-color;
-        font-size: 3.5rem;
+        h6 {
+          font-size: 3.5rem;
+          color: $white-color;
+        }
       }
     }
     & figure {
