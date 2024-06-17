@@ -1,8 +1,4 @@
 @import "../../../styles.scss";
-@import "../../../styles/tipography.scss";
-@import "../../../styles/mixins.scss";
-@import "../../../styles/elements.scss";
-@import "../../../styles/colors.scss";
 
 .facilities-area {
   @include justifying(center);
@@ -45,6 +41,16 @@
         & li {
           font-size: 2.4rem;
           font-weight: 700;
+          padding: 0.8rem;
+          transition: 0.3s ease;
+          border-radius: 0.4rem;
+          &:hover {
+            background-color: $secondary-color-120;
+            text-decoration: none;
+            color: $white-color;
+            transition: 0.3s ease;
+            cursor: pointer;
+          }
         }
       }
     }

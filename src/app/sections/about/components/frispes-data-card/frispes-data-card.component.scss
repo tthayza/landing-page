@@ -1,6 +1,4 @@
 @import "../../../../../styles.scss";
-@import "../../../../../styles/mixins.scss";
-@import "../../../../../styles/colors.scss";
 .info-card-wrapper {
   @include alignment(center);
   gap: 1.6rem;

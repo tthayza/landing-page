@@ -21,7 +21,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Lato";
+  font-family: $lato;
 }
 
 h5 {
@@ -42,7 +42,7 @@ span {
 }
 
 button {
-  font-family: "Lato";
+  font-family: $lato;
   font-weight: 700;
   font-size: 1.2rem;
 }
@@ -58,9 +58,83 @@ button {
 }
 
 a {
-  font-family: "Lato";
+  font-family: $lato;
 }
 
 figcaption {
-  font-family: "Lato";
+  font-family: $lato;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  &:focus {
+    outline: 0.2rem dashed $secondary-color-120;
+  }
+}
+
+p {
+  &:hover {
+    opacity: 0.9;
+  }
+  &:focus {
+    border: 0.2rem solid $secondary-color-120;
+  }
+}
+
+a {
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  &:focus {
+    outline: 0.2rem solid $secondary-color-120;
+  }
+  &:visited {
+    color: purple;
+  }
+}
+
+figcaption {
+  &:hover {
+    opacity: 0.7;
+  }
+  &:focus {
+    outline: 0.1rem solid $gray-1;
+  }
+}
+
+li {
+  &:hover {
+    text-decoration: underline;
+  }
+  &:focus {
+    border: 0.1rem dashed grey;
+  }
+}
+
+button {
+  &:hover {
+    scale: 1.01;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  &:focus {
+    outline: 0.2rem solid $primary-color;
+  }
+
+  &:disabled {
+    background-color: $gray-1;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  &.error {
+    border: 0.2rem solid $secondary-color-120;
+    background-color: lighten($secondary-color-120, 40%);
+  }
 }

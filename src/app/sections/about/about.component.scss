@@ -1,7 +1,4 @@
 @import "../../../styles.scss";
-@import "../../../styles/mixins.scss";
-@import "../../../styles/tipography.scss";
-@import "../../../styles/colors.scss";
 .about-area {
   @include flex-justify-align(center, space-around);
   & .grade-infos {

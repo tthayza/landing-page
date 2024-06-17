@@ -1,6 +1,4 @@
 @import "../../../styles.scss";
-@import "../../../styles/mixins.scss";
-@import "../../../styles/colors.scss";
 
 header {
   @include flex-justify-align(center, space-between);

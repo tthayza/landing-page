@@ -1,7 +1,4 @@
 @import "../../../../../styles.scss";
-@import "../../../../../styles/elements.scss";
-@import "../../../../../styles/mixins.scss";
-@import "../../../../../styles/colors.scss";
 
 .card-review-section {
   @include flex-justify-align(center, space-around);
